@@ -28,8 +28,7 @@ export async function getProductById(id: string): Promise<ProductDetailsResponse
 
         return data
     } catch (error) {
-        console.log(error)
-        throw new Error("PRODUCT_FETCH_FAILED")
+        throw error
     }
 
 }
